@@ -1,8 +1,10 @@
 # Primera  clase  27-Mayo-2015
-¡Hola mundo!,  aqui  estoy  comenzando el  curso de  ** Métodos  computacionales**
+
+¡Hola mundo!,  aqui  estoy  comenzando el  curso de  **Métodos computacionales**
 
 Herramientas del curso:
-# con +  creo listas  con ** Negrilla **
+
+*(con _+_creo _listas,con ** Negrilla ** )*
 
 + git,
 + Github,
