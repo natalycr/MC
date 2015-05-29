@@ -3,6 +3,7 @@
 # Bitácora Clase de Metodos computacionales Vacacional
 
 Nataly Castillo Ruiz
+
 Código: 
 
 ***
@@ -67,6 +68,7 @@ sftp  get *unbit* Trae el archivo  que  quiero  trasferir
 
 
 [ Link repositorio talleres ](https://github.com/natalycr/Talleres.git)
+
 [ Liknk de comandos para markdown] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 *( Imagen uniandes)*
