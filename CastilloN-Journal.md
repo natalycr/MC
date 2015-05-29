@@ -1,6 +1,11 @@
+![alt text](http://www.uniandes.edu.co/templates/tmpl_uniandes/images/logo.png)
+
 # *(Bitácora Clase  de Metodos computacionales Vacacional)*
 
-# Primera clase  *27-Mayo-2015*
+Nataly Castillo Ruiz
+Código: 
+
+## Primera clase  *27-Mayo-2015*
 
 ¡Hola mundo!,  aqui  estoy  comenzando el  curso de  **Métodos computacionales**
 
@@ -14,16 +19,14 @@ Herramientas del curso:
 + bash, 
 
 y los metodos a estudiar son:
-1. interpolación,
+
+1. interpolación
 2. análisis de  fourier,  
 3. linear algebra,
 4. integración y diferenciación numerica, 
 5. ecuaciones diferenciales ordinarias,
 6. ecuaciones diferenciales parciales ,
 7. Metodos de Monte Carlo,
-
-
-
 
 **( Comando  *awk* )**
 
@@ -57,3 +60,12 @@ exit
 sftp  get *unbit* Trae el archivo  que  quiero  trasferir 
 
 
+## Clase_2 - *(29 de marzo de 2015)*
+
+
+[ Link repositorio talleres ]()
+[ Liknk de comandos para markdown] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+*( Imagen uniandes)*
+
+![alt text](http://www.uniandes.edu.co/templates/tmpl_uniandes/images/logo.png)
