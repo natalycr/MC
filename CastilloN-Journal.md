@@ -74,3 +74,10 @@ sftp  get *unbit* Trae el archivo  que  quiero  trasferir
 *( Imagen uniandes)*
 
 ![alt text](http://www.uniandes.edu.co/templates/tmpl_uniandes/images/logo.png)
+
+*(Parametros)*
+'''
+#!/bin/bash
+echo $1, $2
+
+'''
