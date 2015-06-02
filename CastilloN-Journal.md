@@ -44,7 +44,7 @@ reemplazar las congruencias *a* por *b*
 
 + sed 's/a/b/g'
 
-*(Como extraer  del  código fuente el tiempo)*
+**(Como extraer  del  código fuente el tiempo)**
 
 clock0
 crul -s *url* | greep *clock0* | greep *togglesimple* | sed s's/ *"twd">//g | sed s'/<\div>.*//g'
@@ -82,9 +82,96 @@ echo $1, $2
 
 '''
 
+
 he podido hacer una  revision  de una version anterior en github (primer commit) 
 
 + git checkout (hash)
 
 y para volver: 
 + *(git checkout master )*
+
+##Clase_3 / 2 de junio
+
+caracteres  y  rangos:
+
+^
+[^0-3]  rangos  inclusivos  
+
+*(Si tengo algo en un formato que  no es csv hacer)*
+
+copiamos y pegamos  el  texto desde  la pagina al editor  *tw* 
+
+1. queremos borra todo lo que esta entre parentesis (exprecion regular *match*)
+busqueda y remplaso vacio
+\(.*
+o
+\(.+
+
+-----
+
+\(.*\)
+
+
+sed -e 's/\(."\)//g' jove.txt
+
+^*
+para reemplazar los espacios 
+*espacio* *
+*espacio* + (para mas  de  un  espacio)
+
+al renglon a  mano colocar
+
+s/200 al  espacio lo cambiamos  por  un guion.
+
+eliminal las lines  vacias
+quiero reeplazar doble linea \n\n
+por  linea  sencilla \n
+
+**(Gnuplot)**
+set term dum
+plot x
+
+instalar mac plots 
+- set term dum
+- plot x
+- plot sin(x)
+-  plot [0:2*pi] sin(x)
+- *para una ventana*
+set term aqua **No Funciona**
+
+set term qt  *y ya*
+set  title "Hola sin(x)"
+
+* general *set __funcion_ valor *
+
+set  ylable "y_soy bonita"
+
+para  parametricas 
+
+set parametric 
+bla bla 
+
+unset parametric 
+
+**Superficies  3D Gnuplot**
+splot x**2 * y**2
+
+todo  esto puede  ser integrado  en  un  script 
+
+para  gnuplot impot file 
+
+set datafile separator ","
+
+> plot "joviansatellites.csv" using 2:3
+plot "joviansatellites.csv" using 2:3 with lines
+
+definir funciones en gnuplot
+quad(x) = x**2
+
+gnuplot> set datafile separator ","
+gnuplot> quad(x) = x**2
+gnuplot> cube(x) = x**3
+gnuplot> plot "joviansatellites.csv" using (cube($2)):(quad($3))
+
+*Obligatorio en la Bitácora*
+Todo **log** que salga con log  en el Handson

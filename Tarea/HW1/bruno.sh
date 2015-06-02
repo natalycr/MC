@@ -19,7 +19,7 @@ echo "Número de planetas extrasolares en el catálogo: $(wc -l planetas.csv) "
 
 declare massJupiter = 1.899 # por 10 ^27 Kg OJO con las unidades!!!!
 
-planetas.csv > awk '{if($10< ((massJupiter/10))){print $1}' > planetas1_10.csv
+planetas.csv > awk '{if($10< 0.01) {print $1}' > planetas1_10.csv
 
 echo "Número de planetas extrasolares con 1/10 la masa de Jupiter: $(wc -l planetas1_10.csv) "
 
