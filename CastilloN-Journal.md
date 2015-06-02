@@ -81,3 +81,10 @@ sftp  get *unbit* Trae el archivo  que  quiero  trasferir
 echo $1, $2
 
 '''
+
+he podido hacer una  revision  de una version anterior en github (primer commit) 
+
++ git checkout (hash)
+
+y para volver: 
++ *(git checkout master )*
