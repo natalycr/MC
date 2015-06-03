@@ -97,6 +97,8 @@ caracteres  y  rangos:
 ^
 [^0-3]  rangos  inclusivos  
 
+*EXPRECIONES REGULARES*
+
 *(Si tengo algo en un formato que  no es csv hacer)*
 
 copiamos y pegamos  el  texto desde  la pagina al editor  *tw* 
@@ -110,9 +112,19 @@ o
 -----
 
 \(.*\)
+**Nota Importante  para  el  archivo de  años**
 
+si tengo :  en mas  de un  sitio 
+(^\d{4}):
+     año :
 
-sed -e 's/\(."\)//g' jove.txt
+y  ahora decimos 
+
+cámbielo a   (^\d{4}))\t 
+				año tab
+**_____________________________________**
+
+sed -E 's/\(."\)//g' jove.txt
 
 ^*
 para reemplazar los espacios 
@@ -175,3 +187,18 @@ gnuplot> plot "joviansatellites.csv" using (cube($2)):(quad($3))
 
 *Obligatorio en la Bitácora*
 Todo **log** que salga con log  en el Handson
+
+[link ara  expresiones regulares 1](http://persoal.citius.usc.es/tf.pena/ASR/Tema_2html/node22.html)
+[link expresiones regulares 2] (http://www.geany.org/manual/gtk/glib/glib-regex-syntax.html)
+
+
+1. search:  ^....  (hay un  espacio vacio al final)
+
+"tsv tap separated values"
+
+2. curl http://pi.karmona.com | sed -E 's/<B>//g' |sed -E 's/<BR>//g'| sed -E 's/<\B>//g'| sed -E 's/<\/B>//g' > 1oM_pi.csv
+
+Falta  eliminar las letras 
+
+[^\d+\.]
+
