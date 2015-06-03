@@ -213,4 +213,82 @@ Falta  eliminar las letras
  
  Grafica de  dispersión agregando  regresiones lineales
  
+ El archivo  tiene  fecha  dia y  tasa  de  cambio
  
+ http://www.exchange-rates.org/history/COP/USD/T
+ 
+ *Filtramos datos por  patrones*
+ seleccional lineas  de  grep "Text ...." | grep  "USD cop rate for" 
+ 
+ *seleccionar lo que  sea  digitos  "/" y numeros*
+ 
+ sed 's/<.*>/ /g' (el espacio los diferencia)
+ 
+ **remueve tags html**
+ sed -E '<[^>]*>//g' 
+ 
+ borrar todo lo que tenga letras
+ 
+ sed -E 's/[a-zA-Z]//g'
+ 
+ w3m (Comando que descarga como se  ve el html  y no el código)
+ 
+ grep "USD COP rate for" | sed 's/COP.*//g' | sed -E 's/[a-zA-Z]//g' | sed 's/+/,//g' | sed 's/,s//g'
+ 
+ gnuplot 
+set data  file  separator ","
+
+**Gnuplot dates**
+
+plot 
+
+set xdata time (Tipo de  datos en x)
+set data time
+set timefmt "&M/&D/&Y"
+plot 'dolar.csv ' using $1:$2 with lines
+
+**Tiempo del universo**
+la  velocidad  a la que  nos  alejamos de las  galaxias es  directamente proporcional con la distancia a  la que estamos de ellas 
+sed  data 
+
+*fit into gnuplot* 
+
+fit f(x) 'galaxy.csv' using $2:$3 via m,b ("via son los " )
+
+st  datafile separator
+plot "galaxys.csv" 
+
+fit y(x) 'galaxys.csv' !!!!! Preguntar
+
+plot bla 
+replot m*x + b 
+*una  linea  recta*
+
+***NOTA!!!!**
+en  scatter  plo.gp 
+
+### Programando en C
+
+la carpeta  esta  en el  repositorio de  ejemplos
+ciclo 10000 en Bash
+ 
+integers.c
+
+(#include <stdio.h>
+
+int main(){
+	int i=1;
+	int n;
+	n=10000
+	for (i=0; i<= n; i+++){
+		printf(%f \t, i);
+	}
+	return 0, 
+}
+
+)
+es importante  compilarlo *gcc* o *gcc -o integers.out integers.c* donde  el segundo permite que el archivo compilado tenga  el nombre que  quiero. 
+
+starttime=$(date "+%$") mira  el tiempo 
+
+./timer.sh "integers2.sh"

@@ -29,6 +29,7 @@ curl -s https://raw.githubusercontent.com/ComputoCienciasUniandes/MetodosComputa
 # elimina las lineas que empiezan con # despues  borra los espacios  y finalmente borra  la primera linea. 
 sed 's/^[#].*//g' hyg.csv | sed '/^$/d' | sed '1d' > pegaditos.csv
 
+awk -F"," '{if($2!="" && $2< 0.01) {print $1,$2}}' 
 
 #rm pegaditos.csv
 echo 'End' | figlet
