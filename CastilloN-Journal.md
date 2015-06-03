@@ -200,5 +200,17 @@ Todo **log** que salga con log  en el Handson
 
 Falta  eliminar las letras 
 
-[^\d+\.]
+[^\d\.]
 
+## Clase 4 / 3 Junio 
+
+**Nota:** Para  que  no  se  vea  la carga de los archivos *curl -s* y para tab en en mi editor es literal el tab *-	-*
+
+ 
+ *Clase  magistral!!*
+ 
+ Grafica de tasa  de  cambio con  datos de  afuera
+ 
+ Grafica de  dispersión agregando  regresiones lineales
+ 
+ 

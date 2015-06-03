@@ -7,7 +7,7 @@ echo "========================================================================"
 
 echo "importando datos ... ..."
 # Importa  los datos
-curl https://raw.githubusercontent.com/ComputoCienciasUniandes/MetodosComputacionales/master/homework/2015-V/HW1/kepler.csv > header.csv 
+curl -s https://raw.githubusercontent.com/ComputoCienciasUniandes/MetodosComputacionales/master/homework/2015-V/HW1/kepler.csv > header.csv 
 
 # quita la primera linea
 sed '1d' header.csv > planetas.csv
