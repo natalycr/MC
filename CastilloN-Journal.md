@@ -292,3 +292,4 @@ es importante  compilarlo *gcc* o *gcc -o integers.out integers.c* donde  el seg
 starttime=$(date "+%$") mira  el tiempo 
 
 ./timer.sh "integers2.sh"
+

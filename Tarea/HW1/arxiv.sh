@@ -12,14 +12,11 @@ echo "searching the arXiv for the new search = $1"
 
 echo "http://arxiv.org/find/all/1/all:+$1/0/1/0/all/0/1"
 
-#http://arxiv.org/archive/astro-ph/new ojo cambiar
-
 echo '==============================='
 
 echo "Keyword: $1"
 
 echo '==============================='
-
 
 curl -s http://arxiv.org/find/all/1/all:+$1/0/1/0/all/0/1 | grep span | grep Title | awk '{$1=$2= ""}1' > articles.csv # url del que se esta sacando toda la información de los nombres de los artículos
 
@@ -35,7 +32,6 @@ rm  articles.csv # borra  el archivo creado
 
 echo "end"| figlet -f isometric2
 
-# Nota como hacer  el mensaje  de error 
 
 
 
