@@ -293,3 +293,74 @@ starttime=$(date "+%$") mira  el tiempo
 
 ./timer.sh "integers2.sh"
 
+## Clase_5 /  5 de  Junio de  2015
+
+Con base en  el archivo compartido para el taller 
+
+queremos un ciclo 
+* x  con distancia
+* y
+*z
+
+después números  aleatorios  con  distribución normal 
+(x,y,z)*(1/(x^2+y^2+Z^2)^(1/2))
+
+ya existe el código esfera.c
+
+.\a.out > dataesfera.csv
+
+
+*codigo*
+
+*Para plotear en 3D*
+Gnuplot
+
+set data  fiel
+view equal 
+set axis equal 1
+set size ratio 1
+splot ""
+
+### Python!!!!!! 
+
+Diapositivas de clase 
+revisrala !! 
+
+**NOTAS PARA LA TAREA HW2**
+
+para el segundo usar clear
+para el segundo el radio=cos^2(wt) sleep
+
+puede ser  en gnuplot o bc -l (para que conosca funciones  especiales)
+quit
+
+funcion de bash que usando set cambien 2 letras 
+300000 algo 
+
+sed head tail tl 
+para la tarea
+ 
+==================================================================================
+set parametric 
+set trange [0:2*pi] 	# determina los valores de  t para la función paramétrica 
+r="$1" 		# define el radio con el numero que entra  como parámetro
+		# crea la función del circulo
+set xlabel 'x' -2, 2
+set ylabel 'y' -2, 2
+set title 'Circle'
+fx(t)= r*cos(t)
+fy(t)= r*sin(t)
+set size 2,2
+plot fx(t), fy(t) 		#gráfica el círculo
+==================================================================================
+
+set  term dump 
+r="$1" 		# define el radio con el numero que entra  como parámetro
+set xrange [-2,2]
+set yrange [-2,2]
+set title 'Circle'
+set xlabel 'x' -2, 2
+set ylabel 'y' -2, 2
+uno=x/$1
+dos=y/$1
+plot uno^2
