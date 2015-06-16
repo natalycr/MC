@@ -1,0 +1,26 @@
+# Punto 4 HW1 
+(a)
+ssh n.castillo1387@compufi3.uniandes.edu.co
+(b)
+natyCR27@Natalys-MBP:~/Documents/Uniandes/vacacional/MC$ sftp n.castillo1387@compufi3.uniandes.edu.co
+Password: 
+Connected to compufi3.uniandes.edu.co.
+sftp> cd /usuarios/homenfs7/taller1/ 
+sftp> ls
+ALEJANDRO-HERNANDEZ-ARBOLEDA.png            ALFREDO-RICCI-VASQUEZ.png                   ARTURO-VELASQUEZ-GARCIA.png                 CIRO-FERNANDO-GELVEZ-PEDROZA.png            
+DANIEL-ESTEBAN-OCHOA-TAMAYO.png             DANIEL-ESTEBAN-OLAYA-CORTES.png             DANIEL-FELIPE-FORERO-SANCHEZ.png            DIEGO-ALEJANDRO-ZAMBRANO-SIERRA.png         
+DIEGO-LUIS-RAMIREZ-MILANO.png               DIVA-MERCEDES-MARTINEZ-LAVERDE.png          JENIFER-ALEJANDRA-AGUILERA-HUERTAS.png      JOSE-ALFONSO-ACOSTA-PEÑALOZA.png          
+JUAN-ANDRES-URREA-NIÑO.png                JUAN-SEBASTIAN-DIAZ-BOADA.png               JUAN-SEBASTIAN-VARGAS-AHUMADA.png           KEVIN-FELIPE-HENAO-LOPEZ.png                
+MIGUEL-ANGEL-ROJAS-APARICIO.png             MONICA-ALEJANDRA-BARRERA-CASTILLO.png       NATALY-CASTILLO-RUIZ.png                    NICOLAS-ALEXANDRE-MORALES-DURAN.png         
+NICOLAS-RANGEL-JURADO.png                   PAULA-MANUELA-SIAUCHO-UNRIZA.png            RAY-DAVID-DIAZ-DE-LA-BARRERA.png            SANDRA-JIMENA-GONZALEZ-LOZANO.png           
+SEBASTIAN-CAMILO-PUERTO-GALINDO.png         VICTOR-HUGO-GONZALEZ-SANCHEZ.png            
+sftp> get NATALY-CASTILLO-RUIZ.png
+Fetching /usuarios/homenfs7/taller1/NATALY-CASTILLO-RUIZ.png to NATALY-CASTILLO-RUIZ.png
+/usuarios/homenfs7/taller1/NATALY-CASTILLO-RUIZ.png                                                                                           100% 3836     3.8KB/s   00:00    
+sftp> 
+
+# La  cita:
+ 
+I want to know God's thoughts; the  rest are details
+
+Nota: El .PNG esta en la carpeta

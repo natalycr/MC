@@ -364,3 +364,15 @@ set ylabel 'y' -2, 2
 uno=x/$1
 dos=y/$1
 plot uno^2
+
+#!/bin/bash 
+fileout=$1 
+gnuplot << EOF 
+fileinp='mydata.dat' 
+set terminal postscript 
+set output "${fileout}.ps" 
+plot fileinp u 1smilie$3<5 ? $2 : 1/0) 
+EOF 
+
+
+wc -l < log.txt | tr -d '\n'
