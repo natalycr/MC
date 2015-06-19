@@ -1,5 +1,5 @@
 #! /bin/ bash
-# Nota Nuevo con New!!! 
+# Nota Nuevo con New!!!
 
 clear
 
@@ -7,7 +7,7 @@ echo 'arXiv' | figlet -f starwars
 
 echo '==============================='
 
-# $1 significa el primer parámetro que  entra después del nombre de mi ejecutable. 
+# $1 significa el primer parámetro que  entra después del nombre de mi ejecutable.
 
 echo "searching the arXiv for the new search = $1"
 
@@ -28,10 +28,9 @@ echo "Related titles: $(wc -l articles.csv )"  # cuenta el numero de  artículos
 echo '------------------------------------------------------------------------------'
 
 
-echo "Articles found: " | figlet 
+echo "Articles found: " | figlet
 cat articles.csv # muestra  la lista de nombres  de cada  articulo
 
 rm  articles.csv # borra  el archivo creado
 
 echo "end"| figlet -f isometric2
-
