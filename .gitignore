@@ -1,0 +1,12 @@
+# No subir archivos de datos
+*.csv
+*.tsv
+
+# Las carpetas ocultas de ipython
+.ipynb_checkpoints
+
+# Los temporales
+*~
+
+# Los ejecutables
+*.out
