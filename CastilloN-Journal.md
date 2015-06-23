@@ -551,3 +551,18 @@ Tambien  se puede  hacer  transformadas  de  fourier  en imágenes . por  estas 
 [link de  la carpeta de dropbox clase](https://www.dropbox.com/s/oa7imdo9ec8ah97/05-Fourier.ipynb?dl=0)
 
 [link handas on_9](http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python2)
+
+## Clase_10
+
+### Derivadas!!!
+
+derivadas >
+errores dependiendo del metodo usando
+
+h; si se utiliza  diferencias  hacia adelante y  haceia atras
+y es  h^2 para difrerencias  centrales
+
+Como ver el valor  cuando la  funcion tiende  a  0
+--- Se le  dan valores  se encuentra el polinomio y se  remplaza en 0
+
+*Nota:* existe  sympy
