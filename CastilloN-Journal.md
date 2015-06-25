@@ -237,7 +237,7 @@ Falta  eliminar las letras
 
 ## Clase_4 *(3 de Junio)*
 
-**Nota:** Para  que  no  se  vea  la carga de los archivos *curl -s* y para tab en en mi editor es literal el tab *-	-*
+**Nota:** Para  que  no  se  vea  la carga de los archivos *curl -s* y para tab en en mi editor es literal el tab *-  -*
 
 
  *Clase  magistral!!*
@@ -566,3 +566,22 @@ Como ver el valor  cuando la  funcion tiende  a  0
 --- Se le  dan valores  se encuentra el polinomio y se  remplaza en 0
 
 *Nota:* existe  sympy
+
+[Hands_on 10](http://localhost:8888/notebooks/hands_on10.ipynb)
+
+Nota: [Para la tarea HW4](http://www.astrobetter.com/blog/2010/03/03/fourier-transforms-of-images-in-python/)
+
+##Clase_11 (24 de Junio)
+
+### Integración numerica computacionale
+
+asumimos  que  tenemos intervalos de integración y este  se  divide en intervalos equiespaciados. Partimos del  limite  inferios  al superior
+aprox  rapesoidal (se  aproxima  a una linea recta (polinomio de  grado 1)) y se  integra el trapecio
+(bm+bM)
+
+(b-a)(f(a)+f(b)) (1/2)
+* metodo de simson (polinomio de  grado 2)
+
+como escala el error  para las integrales (simson  escala h^4)
+
+Integracion Gausiana
