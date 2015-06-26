@@ -585,3 +585,5 @@ aprox  rapesoidal (se  aproxima  a una linea recta (polinomio de  grado 1)) y se
 como escala el error  para las integrales (simson  escala h^4)
 
 Integracion Gausiana
+
+Hands on_ 
