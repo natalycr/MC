@@ -586,4 +586,65 @@ como escala el error  para las integrales (simson  escala h^4)
 
 Integracion Gausiana
 
-Hands on_ 
+Hands on_
+
+## Clase_12 (26 de  Junio!!)
+
+###Ecuaciones diferenciales Ordinarias.
+
+dependiendo del time step
+se observa que el error escala con h y queremos mejorar la solución
+
+####Regla del punto medio
+Tenemos tn --- tn+dt ---
+donde dY/dt(tn) =k1, dY/dt(tn+dt) =k2
+el (cambio triangulito)Y=1/2(k1+k2)dt
+
+necesito k2  
+k2 = f(Y(tn)+f(tn)dt)
+
+sacamos estimados para derivadas en 3 puntos (tenemos un punto medio sacamos la derivada aprox [k2= dY/dt(tn+dt/2) _*_ f()] )
+
+metodo de rogecuta de 3er orden
+
+## Clase_13 (30 de Junio)
+
+### Implementacíon de  un Método adaptativo
+
+El metodo  calcula  el error  y si el erro es muy grande  se  reduce el time step.
+
+dos formas de  calcular el siguiente
+* com timestep dt
+* el segundo usa  4 pasos para untimestep t/(2) la  diferencia
+
+Error local solo un time step
+El=|(Y(dt/2)-Y(dt))|/30 *¿Por què el factor de 30?*
+
+
+Error Global el que se  acomula de toda la ecuacion
+
+
+*Nota* dt dt => se toma en 2dt para llegar a Y(n+2)
+
+se inicia con un tiemestep "arbitrario"
+
+####A-B
+
+derivada actial  y  sguiente.
+
+dt(n-2) Dt(n-1) dt
+
+se  encuentra  el polinomio que interpola eso
+
+
+
+##Clase_14
+Ecuaciones  diferenciales  parciales
+cond de  frontera (Periodicas)
+
+al  inicio distribucion d e la sustancia
+cond  inicial  es una  gausiana / (2pi)^1/2
+
+La  variancia cambia linealmente  respecto al tiempo (es  valido cuando no hay fronteras  periódicas)
+
+Se  busca que  en los  extremos la  concentracion se =0
